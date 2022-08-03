@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background: url(/menu-background.jpeg);
+    background-size: cover;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+nav {
+    background-color: #333333;
+    padding: 1.1rem;
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+    justify-content: center;
+}
+nav > ul > li {
+    color: #f9f9f9;
+}
+
+.container {
+    background: url(/chickenParmesan.webp);
+    background-repeat: no-repeat;
+    background-position: center -190px;
+    background-size: contain;
+    margin: 7em auto;
+    max-width: 1024px;
+    border: 5px solid #ffaf31;
+    border-radius: 15px 50px;
+    padding: 0 15px;
+}
+
+#hero {
+    min-height: 200px;
+}
+
+h1 {
+    color: white;
+    font-size: 70pt;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-items {
+    margin: 5rem auto;
+    column-count: 2;
+    column-gap: 20px;
+    padding: 0 5rem;
+}
+
+.menu-item {
+    page-break-inside: avoid;
+    padding: 0 1rem 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #a9a9a9a9;
+    padding: 20px;
+}

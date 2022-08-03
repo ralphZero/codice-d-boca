@@ -1,0 +1,51 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+/* css variables */
+:root {
+    --main-color: rgb(229, 219, 209);
+    --accent-color: green;
+    --default-text-color: #333333;
+    --default-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: var(--default-font);
+    color: var(--default-text-color);
+}
+
+.parent-container {
+    display: flex;
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .parent-container {
+        flex-direction: column;
+    }
+}
+
+.box1, .box2, .box3 {
+    padding: 4rem;
+    margin: 2rem;
+}
+
+
+.box1 {
+    background-color: aqua;
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color:darksalmon;
+}
